@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TechWave - Assignment</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-section">
+      <div class="header-container container">
+        <div class="header-logo">
+          <h1>Tech <span>Wave</span></h1>
+        </div>
+
+        <nav class="header-menu" id="headerMenu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">Host</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-button">
+          <button class="btn-primary">
+            Subscribe <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- === Hero Section Start ===  -->
+      <section class="hero-section">
+        <div class="hero-container container">
+          <div class="hero-circle">
+            <img src="./assets/hero-circle.png" alt="" />
+            <img src="./assets/microphone.png" alt="" />
+            <button class="btn-primary">New</button>
+          </div>
+          <div class="hero-text">
+            <h1>TechWave</h1>
+            <p>
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <button>
+              <span><i class="ri-spotify-line"></i></span>Listen on Spotify
+            </button>
+            <button>
+              <span><i class="ri-mail-line"></i></span>Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- === Hero Section End === -->
+      <!-- === AboutSection Start === -->
+      <section class="about-section">
+        <div class="about-container container">
+          <div class="about-content">
+            <h1>About the Podcast</h1>
+            <p class="first-pera">
+              echWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology. We break down complex topics into digestible
+              insights, explore productivity strategies that actually work, and
+              share stories of personal growth from industry leaders.
+            </p>
+            <p class="last-line">
+              Join thousands of young professionals and tech enthusiasts start
+              their day with TechWave.
+            </p>
+            <span class="content-border"></span>
+          </div>
+          <div class="about-ratings">
+            <div class="listeners">
+              <h1>150K+</h1>
+              <p>Monthly Listeners</p>
+            </div>
+            <div class="episode">
+              <h1>200+</h1>
+              <p>Episodes Published</p>
+            </div>
+            <div class="avg-ratings">
+              <h1>4.9 <i class="ri-star-fill"></i></h1>
+              <p>Average</p>
+            </div>
+            <div class="experts">
+              <h1>50+</h1>
+              <p>Industry Experts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- === AboutSection End === -->
+      <!-- === Choose Section Start ===  -->
+      <section class="choose-techwave">
+        <h1>Why Choose TechWave</h1>
+        <div class="choose-container container">
+          <div class="tw-audio">
+            <span><i class="ri-customer-service-line"></i></span>
+            <h2>Premium Audio Quality</h2>
+            <p>
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+          <div class="tw-mobile">
+            <span><i class="ri-smartphone-line"></i></span>
+            <h2>Mobile Friendly</h2>
+            <p>
+              Listen on the go with seamless mobile experience and offline
+              downloads.
+            </p>
+          </div>
+          <div class="tw-global">
+            <span><i class="ri-earth-line"></i></span>
+            <h2>Global Reach</h2>
+            <p>
+              Connect with listeners worldwide across 150+ countries and
+              multiple streaming platforms.
+            </p>
+          </div>
+          <div class="tw-interviews">
+            <span><i class="ri-flashlight-line"></i></span>
+            <h2>Exclusive Interviews</h2>
+            <p>
+              Get unprecedented access to industry titans, startup founders, and
+              tech visionaries. Our host secures exclusive conversations you
+              won't find anywhere else, diving deep into their journeys,
+              failures, and success strategies.
+            </p>
+          </div>
+          <div class="tw-resources">
+            <span><i class="ri-book-open-line"></i></span>
+            <h2>Rich Resources</h2>
+            <p>
+              Access show notes, transcripts, and additional learning materials
+              for every episode.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- === Choose Section End ===  -->
+      <!-- === Episodes Section Start ===  -->
+      <section class="featured-section">
+        <div class="featured-container container">
+          <h1>Featured Episodes</h1>
+          <div class="episodes-container">
+            <div class="episode-1">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/vJWzH_2F64g?list=PLAwfu_003TGlID2Zt2Z8aeuuljyj-l_Tv"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-content">
+                <h2>The Future of AI in Everyday Life</h2>
+                <p>
+                  Exploring how artificial intelligence is transforming our
+                  daily routines and what to expect in the next decade.
+                </p>
+                <p class="clock">
+                  <span><i class="ri-timer-fill"></i></span> 42min
+                </p>
+              </div>
+            </div>
+            <div class="episode-2">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/vJWzH_2F64g?list=PLAwfu_003TGlID2Zt2Z8aeuuljyj-l_Tv"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-content">
+                <h2>The Future of AI in Everyday Life</h2>
+                <p>
+                  Exploring how artificial intelligence is transforming our
+                  daily routines and what to expect in the next decade.
+                </p>
+                <p class="clock">
+                  <span><i class="ri-timer-fill"></i></span> 42min
+                </p>
+              </div>
+              <h1></h1>
+            </div>
+            <div class="episode-3">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/vJWzH_2F64g?list=PLAwfu_003TGlID2Zt2Z8aeuuljyj-l_Tv"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+              <div class="video-content">
+                <h2>The Future of AI in Everyday Life</h2>
+                <p>
+                  Exploring how artificial intelligence is transforming our
+                  daily routines and what to expect in the next decade.
+                </p>
+                <p class="clock">
+                  <span><i class="ri-timer-fill"></i></span> 42min
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- === Episodes Section End === -->
+    </main>
+
+    <!-- ===  Section Start ===  -->
+    <!-- ===  Section End === -->
+
+    <!-- ===  Section Start ===  -->
+    <!-- ===  Section End === -->
+
+    <!-- ===  Section Start ===  -->
+    <!-- ===  Section End === -->
+  </body>
+</html>
