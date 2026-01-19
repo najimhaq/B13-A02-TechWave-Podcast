@@ -237,21 +237,6 @@ p {
   background-size: cover;
   background-position: center;
 }
-
-/* Dark overlay */
-/* section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(130, 70, 255, 0.35),
-    rgba(10, 5, 30, 0.95)
-  );
-  z-index: 0;
-} */
-
-/* ================= HERO CONTAINER ================= */
 .hero-container {
   position: relative;
   z-index: 1;
@@ -261,7 +246,6 @@ p {
   text-align: center;
 }
 
-/* ================= HERO CIRCLE ================= */
 .hero-circle {
   position: relative;
   width: 350px;
@@ -272,9 +256,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* box-shadow:
-    0 0 40px rgba(255, 0, 200, 0.6),
-    0 0 80px rgba(131, 56, 236, 0.8); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,8 +286,6 @@ p {
   cursor: pointer;
   box-shadow: 0 0 15px rgba(0, 255, 179, 0.7);
 }
-
-/* ================= HERO TEXT ================= */
 .hero-text h1 {
   font-size: 3.75rem;
   font-weight: 700;
@@ -320,7 +299,7 @@ p {
   color: #cfc7ff;
 }
 
-/* ================= BUTTONS ================= */
+/* ====== BUTTONS ====== */
 .hero-text button {
   border: none;
   outline: none;
@@ -359,7 +338,6 @@ p {
   background: #00ffb3;
   color: #000;
 }
-
 /* === Hero Section End === */
 
 /* === About Section Start === */
