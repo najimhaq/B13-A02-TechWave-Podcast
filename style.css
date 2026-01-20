@@ -759,13 +759,13 @@ p {
 .host-section {
   background-color: var(--color-dark);
 }
-.host-container{
+.host-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
-.host-container .host-card{
+.host-container .host-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -774,14 +774,14 @@ p {
   border-radius: 2.5rem;
   padding: 2.5rem;
 }
-.host-container .host-card .host-img img{
+.host-container .host-card .host-img img {
   max-width: 200px;
   height: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.host-container .host-card .host-content{
+.host-container .host-card .host-content {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -832,19 +832,19 @@ p {
 
 /* === Footer Section Start === */
 footer {
-  background-image: url("../assets/footer-bg.png"); 
+  background-image: url('./assets/footer-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
-  color: white; 
+  color: white;
   padding: 5rem 1.5rem;
   display: flex;
-  justify-content: center;  
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
-.footer-container{
+.footer-container {
   text-align: center;
 }
 .footer-logo {
@@ -886,20 +886,19 @@ footer {
     background-position: 300% 50%;
   }
 }
-.footer-container .social-icons-footer{
+.footer-container .social-icons-footer {
   margin-bottom: 2rem;
   display: flex;
   gap: 2rem;
   justify-content: center;
 }
-.footer-container .social-icons-footer p{
+.footer-container .social-icons-footer p {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.footer-container .social-icons-footer p i{
+.footer-container .social-icons-footer p i {
   font-size: 1.2rem;
   font-weight: 500;
-  
 }
 .footer-container p {
   font-size: 1rem;
@@ -914,7 +913,6 @@ footer {
 }
 /* ==== Responsive ==== */
 @media (min-width: 576px) {
-  
   /* === Container Adjustments === */
   .container {
     padding: 0 2rem;
@@ -1037,11 +1035,9 @@ footer {
   }
 }
 
-
 /* === **Medium Device:** 576px to 992 px (Optional) === */
 
 @media (min-width: 992px) {
-  
   /* === Container === */
   .container {
     padding: 0 3rem;
@@ -1184,11 +1180,9 @@ footer {
   }
 }
 
-
 /* === Small device === */
 
 @media (max-width: 575px) {
-  
   /* === Typography === */
   h1 {
     font-size: 2rem;
@@ -1293,7 +1287,7 @@ footer {
   /* === About === */
   .about-section .about-container .about-content h1 {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     line-height: 2;
   }
@@ -1307,7 +1301,7 @@ footer {
 
   .about-container .about-ratings {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 4rem;
   }
 
@@ -1316,12 +1310,12 @@ footer {
     font-weight: 900;
     margin: 0;
   }
-.about-container .about-ratings p{
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-  margin: 0;
-}
+  .about-container .about-ratings p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
   /* === Choose === */
   .choose-techwave h1 {
     font-size: 2rem;
@@ -1430,4 +1424,3 @@ footer {
     padding: 3rem 1rem;
   }
 }
-
