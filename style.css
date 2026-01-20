@@ -104,7 +104,7 @@ h2 {
 p {
   font-size: 1rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #a99fb5;
   line-height: 1.6;
 }
 #section-b-margin {
@@ -115,7 +115,8 @@ p {
 .about-section,
 .choose-techwave,
 .episodes-section,
-.featured-section {
+.featured-section,
+.host-section {
   padding: 4rem;
 }
 /* === Main Css=== */
@@ -134,23 +135,69 @@ p {
   position: relative;
 }
 
-.header-logo h1 {
+.header-logo {
   font-size: 2.5rem;
   font-weight: 900;
-  z-index: 1000;
+  letter-spacing: 1px;
+  color: #fff;
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease;
 }
-
-.header-logo h1 span {
+.header-logo .tech-part {
+  color: var(--white);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.header-logo .wave-part {
   background: linear-gradient(
-    to right,
-    rgba(138, 24, 199, 1) 0%,
-    rgba(253, 29, 29, 1) 81%,
-    rgba(252, 176, 69, 1) 100%
+    90deg,
+    #ffb703 0%,
+    #e72c83 33%,
+    #9100f8 66%,
+    #f7e93f 100%
   );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
+  animation: gradientFlow 4s linear infinite;
+}
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+/* Logo shadow animation */
+.logo-shadow {
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 215, 0, 0.3) 0%,
+    rgba(255, 105, 180, 0.2) 30%,
+    rgba(138, 43, 226, 0.1) 60%,
+    transparent 80%
+  );
+  animation: shadowPulse 4s ease-in-out infinite;
+}
+@keyframes shadowPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
 }
 
 .header-logo:hover {
@@ -593,7 +640,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
 }
 .featured-section .featured-container h1 {
   font-size: 3rem;
@@ -686,11 +732,13 @@ p {
   .featured-container
   .episodes-container
   .episode-1
-  .video-content,.featured-section
+  .video-content,
+.featured-section
   .featured-container
   .episodes-container
   .episode-2
-  .video-content,.featured-section
+  .video-content,
+.featured-section
   .featured-container
   .episodes-container
   .episode-3
@@ -714,8 +762,85 @@ p {
 }
 /* === Featured  Section End === */
 
-/* ===  Section Start === */
-/* ===  Section End === */
+/* === Host Section Start === */
+.host-section {
+  background-color: var(--color-dark);
+}
+.host-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.host-container .host-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #250d44;
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+}
+.host-container .host-card .host-img img{
+  max-width: 200px;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.host-container .host-card .host-content{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.host-container .host-content .social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.host-container .host-content .social-icons a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.18); /* soft outline */
+  transition: all 0.3s ease;
+}
+
+.host-container .host-content .social-icons a i {
+  font-size: 2rem;
+  background: linear-gradient(
+    135deg,
+    #f7e93f 0%,
+    #ff3cac 40%,
+    #784ba0 75%,
+    #2b86c5 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* hover effect (subtle lift + glow) */
+.host-container .host-content .social-icons a:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(255, 60, 172, 0.25);
+}
+
+
+
+
+/* === Host Section End === */
 
 /* ===  Section Start === */
 /* ===  Section End === */
@@ -790,4 +915,10 @@ p {
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
