@@ -139,7 +139,8 @@
 
 ## 📂 Submission Format
 
-- **GitHub Repository Link**
+- **GitHub Repository Link** 
+https://github.com/najimhaq/B13-A02-TechWave-Podcast
 - **Live Website Link (GitHub Pages)**
 
 ---

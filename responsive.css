@@ -58,6 +58,7 @@ body {
     rgba(253, 29, 29, 1) 81%,
     rgba(252, 176, 69, 1) 100%
   );
+  /* background: linear-gradient(90deg, #f7e93f, #9100f8, #fb09b4); */
   transform: translateY(-3px) scale(1.04);
   box-shadow:
     0 10px 28px rgba(184, 48, 168, 0.35),
@@ -123,6 +124,7 @@ p {
   position: relative;
   padding: 1rem;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -130,6 +132,7 @@ p {
   padding: 1.5rem 0;
   position: relative;
 }
+
 .header-logo {
   font-size: 2.5rem;
   font-weight: 900;
@@ -267,6 +270,7 @@ p {
 /* === Header Section End === */
 
 /* === Hero Section Start === */
+
 .hero-section {
   position: relative;
   max-height: 760px;
@@ -832,7 +836,7 @@ p {
 
 /* === Footer Section Start === */
 footer {
-  background-image: url("../assets/footer-bg.png"); 
+  background-image: url("../assets/footer-bg.png"); /* adjust path if needed */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -912,7 +916,28 @@ footer {
     transition: none !important;
   }
 }
+
 /* ==== Responsive ==== */
+/* ========================================
+   MOBILE-FIRST RESPONSIVE BREAKPOINTS
+   Small: 0-576px (base styles)
+   Medium: 576px-992px
+   Large: 992px+
+======================================== */
+
+/* ==========================================
+   BASE STYLES (Mobile First - 0-576px)
+   এই স্টাইলগুলি সব ডিভাইসে প্রযোজ্য হবে
+========================================== */
+
+/* (আপনার বর্তমান CSS এখানে থাকবে) */
+
+
+/* ==========================================
+   MEDIUM DEVICES (Tablets - 576px to 992px)
+   min-width ব্যবহার করে যখন স্ক্রিন ৫৭৬px বা বড়
+========================================== */
+
 @media (min-width: 576px) {
   
   /* === Container Adjustments === */
@@ -1038,7 +1063,10 @@ footer {
 }
 
 
-/* === **Medium Device:** 576px to 992 px (Optional) === */
+/* ==========================================
+   LARGE DEVICES (Laptops & Desktops - 992px+)
+   min-width ব্যবহার করে যখন স্ক্রিন ৯৯২px বা বড়
+========================================== */
 
 @media (min-width: 992px) {
   
@@ -1168,7 +1196,13 @@ footer {
     gap: 2rem;
   }
 }
-/* === **Large Device:** above 992 px  === */
+
+
+/* ==========================================
+   EXTRA LARGE DEVICES (Large Desktops - 1200px+)
+   অপশনাল: আরো বড় স্ক্রিনের জন্য
+========================================== */
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1400px;
@@ -1185,7 +1219,10 @@ footer {
 }
 
 
-/* === Small device === */
+/* ==========================================
+   SMALL DEVICES ONLY (Mobile - Up to 576px)
+   max-width ব্যবহার করে শুধুমাত্র মোবাইলের জন্য
+========================================== */
 
 @media (max-width: 575px) {
   
