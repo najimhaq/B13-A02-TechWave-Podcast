@@ -780,6 +780,7 @@ p {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
+  line-height: 2;
 }
 .featured-section
   .featured-container
